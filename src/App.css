@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url('./reset.css');
+@font-face {
+  font-family: 'Monserrat-Regular';
+  src: url('./fonts/monserrat/Montserrat-Regular.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Monserrat-Bold';
+  src: url('./fonts/monserrat/Montserrat-Bold.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'PtSerif-Regular';
+  src: url('./fonts/ptserif/PTSerif-Regular.ttf');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: 'PtSerif-Italic';
+  src: url('./fonts/ptserif/PTSerif-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'PtSerif-Bold-Italic';
+  src: url('./fonts/ptserif/PTSerif-BoldItalic.ttf');
+}
+
+body {
+  font-family: 'Monserrat-Regular', Arial, Helvetica, sans-serif;
+}
+
+#header-section {
+  width: 100%;
+  min-height: 80px;
+  background-color: #084F8D;
+  padding: 20px 0px;
+}
+
+.logo-content {
+  width: 20%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#content {
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.widget-content {
+  max-width: 450px;
+  margin: 10px auto;
+}
+
+.widget-content select {
+  width: 100%;
+  height: 30px;
+  padding: 0px;
+}
+
+.most-view-box {
+  margin: 20px 0px;
+}
+
+.most-view-box>h3 {
+  color: #084F8D;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #a6cae3;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.most-view-box ul {
+  width: 100%;
+  list-style: none;
+}
+
+.most-view-box ul li {
+  width: 100%;
+  list-style: none;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.most-view-box ul li .post-widget-ranking {
+  font-family: 'PtSerif-Bold-Italic';
+  width: 40%;
+  text-align: center;
+  color: #E6E6E6;
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.most-view-box ul li .post-widget-title a {
+  width: 70%;
+  text-align: left;
+  color:#212121;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-decoration: none;
+  
 }
